@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_W7hzMNt5EeeQsp_NjVynrQ" name="HangingUML">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_I_9awNt6EeeQsp_NjVynrQ">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_KeywQNt6EeeQsp_NjVynrQ">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_c_3ewNt6EeeQsp_NjVynrQ" name="Controller">
+    <packagedElement xmi:type="uml:Class" xmi:id="_pSlqENt5EeeQsp_NjVynrQ" name="Controller"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_N8FkQNt_EeeQsp_NjVynrQ" name="Model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Hdtj4NuFEeeQsp_NjVynrQ" name="Model">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_f-2XYNuFEeeQsp_NjVynrQ" name="image" visibility="private"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_L1KP0NuGEeeQsp_NjVynrQ" name="mot" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_W7XvQNuGEeeQsp_NjVynrQ" name="listObserver" visibility="private" type="_ykmoANt5EeeQsp_NjVynrQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_sJ1RENuGEeeQsp_NjVynrQ" name="Model"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yQlz8NuGEeeQsp_NjVynrQ" name="accueilObserver"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1F5NINuGEeeQsp_NjVynrQ" name="addObserver"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_2yJ6oNuGEeeQsp_NjVynrQ" name="deleteObserver"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8wm2ENuGEeeQsp_NjVynrQ" name="Score">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DdhaANuHEeeQsp_NjVynrQ" name="nbrMot" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JN75cNuHEeeQsp_NjVynrQ" name="nom" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_P9N04NuHEeeQsp_NjVynrQ" name="Score"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_R3JyANuHEeeQsp_NjVynrQ" name="Score">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Z6YooNuHEeeQsp_NjVynrQ" name="str">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_dm6kwNuHEeeQsp_NjVynrQ" name="in">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ywe_gNuHEeeQsp_NjVynrQ" name="ScoreSerializer">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3M9K0NuHEeeQsp_NjVynrQ" name="listeScore" visibility="private" type="_8wm2ENuGEeeQsp_NjVynrQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_53EnsNuHEeeQsp_NjVynrQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_53XioNuHEeeQsp_NjVynrQ" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QUJRsNuIEeeQsp_NjVynrQ" name="ScoreSerializer"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_SqRbkNuIEeeQsp_NjVynrQ" name="getListeScore">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_DDFO0NuJEeeQsp_NjVynrQ" name="listScore" type="_8wm2ENuGEeeQsp_NjVynrQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_QaYysNt_EeeQsp_NjVynrQ" name="Observer">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_ykmoANt5EeeQsp_NjVynrQ" name="Observer"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_uYcwoNt5EeeQsp_NjVynrQ" name="Observable"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_hFVtENt_EeeQsp_NjVynrQ" name="View"/>
+</uml:Model>
