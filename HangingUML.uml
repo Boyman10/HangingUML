@@ -222,6 +222,10 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_kwcFYODbEeeVkMJxGTFkWg" name="size">
       <type xmi:type="uml:Class" href="../SwingUML/SwingUML.uml#_oHjZsOCwEeeVRp3qO_9ugw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0igkEuDoEeeVkMJxGTFkWg" name="zcontainer" type="_5BbOIODiEeeVkMJxGTFkWg" association="_0if9AODoEeeVkMJxGTFkWg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0ihLIODoEeeVkMJxGTFkWg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ihLIeDoEeeVkMJxGTFkWg" value="1"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_nTqQEODbEeeVkMJxGTFkWg" name="Fenetre">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_WV9jYODcEeeVkMJxGTFkWg" name="obs" type="_uYcwoNt5EeeQsp_NjVynrQ"/>
     </ownedOperation>
@@ -249,5 +253,62 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m5BGAeDcEeeVkMJxGTFkWg" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_m5BGBeDcEeeVkMJxGTFkWg" name="main" type="_t_rRkODaEeeVkMJxGTFkWg" association="_m4_34ODcEeeVkMJxGTFkWg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mcCnYODiEeeVkMJxGTFkWg" name="AccueilPanel">
+    <generalization xmi:type="uml:Generalization" xmi:id="_QZkZQODjEeeVkMJxGTFkWg" general="_5BbOIODiEeeVkMJxGTFkWg"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_pvBbEODiEeeVkMJxGTFkWg" name="AccueilPanel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ullhYODiEeeVkMJxGTFkWg" name="dim">
+        <type xmi:type="uml:Class" href="../SwingUML/SwingUML.uml#_oHjZsOCwEeeVRp3qO_9ugw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_vnax0ODiEeeVkMJxGTFkWg" name="initPanel"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5BbOIODiEeeVkMJxGTFkWg" name="ZContainer" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IwHUkODjEeeVkMJxGTFkWg" name="panel">
+      <type xmi:type="uml:Class" href="../SwingUML/SwingUML.uml#_oINhAOCwEeeVRp3qO_9ugw"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7vDSAODiEeeVkMJxGTFkWg" name="ZContainer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-B3CIODiEeeVkMJxGTFkWg" name="dim">
+        <type xmi:type="uml:Class" href="../SwingUML/SwingUML.uml#_oHjZsOCwEeeVRp3qO_9ugw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-8s5wODiEeeVkMJxGTFkWg" name="getPanel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_EK8gQODjEeeVkMJxGTFkWg" direction="return">
+        <type xmi:type="uml:Class" href="../SwingUML/SwingUML.uml#_oINhAOCwEeeVRp3qO_9ugw"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ASdLwODjEeeVkMJxGTFkWg" name="initPanel"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jhRp8ODjEeeVkMJxGTFkWg" name="GamePanel">
+    <generalization xmi:type="uml:Generalization" xmi:id="_P9M0EODoEeeVkMJxGTFkWg" general="_5BbOIODiEeeVkMJxGTFkWg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_e335EODnEeeVkMJxGTFkWg" name="bouton" visibility="private">
+      <type xmi:type="uml:Class" href="../SwingUML/SwingUML.uml#_oIvsgOCwEeeVRp3qO_9ugw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gggq0ODnEeeVkMJxGTFkWg" name="controller" visibility="private" type="_pSlqENt5EeeQsp_NjVynrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_h2zvYODnEeeVkMJxGTFkWg" name="dimension" visibility="private">
+      <type xmi:type="uml:Class" href="../SwingUML/SwingUML.uml#_oHjZsOCwEeeVRp3qO_9ugw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jmOekODnEeeVkMJxGTFkWg" name="imageLabel" visibility="private">
+      <type xmi:type="uml:Class" href="../SwingUML/SwingUML.uml#_oIo-0OCwEeeVRp3qO_9ugw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lQ-JIODnEeeVkMJxGTFkWg" name="img" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mMA1EODnEeeVkMJxGTFkWg" name="mot" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_m2eHUODnEeeVkMJxGTFkWg" name="motSecret" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_n13HwODnEeeVkMJxGTFkWg" name="nombreMot" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_o-lqYODnEeeVkMJxGTFkWg" name="pts" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_psjjoODnEeeVkMJxGTFkWg" name="score" visibility="private"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_WW0BgODoEeeVkMJxGTFkWg" client="_jhRp8ODjEeeVkMJxGTFkWg" supplier="_ykmoANt5EeeQsp_NjVynrQ" contract="_ykmoANt5EeeQsp_NjVynrQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_q3iJAODnEeeVkMJxGTFkWg" name="GamePanel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sEbZ8ODnEeeVkMJxGTFkWg" name="accueil"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_toJPcODnEeeVkMJxGTFkWg" name="initPanel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_vapH0ODnEeeVkMJxGTFkWg" name="restart"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_wwPBwODnEeeVkMJxGTFkWg" name="showScore"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yFsY0ODnEeeVkMJxGTFkWg" name="update"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0if9AODoEeeVkMJxGTFkWg" memberEnd="_0igkEuDoEeeVkMJxGTFkWg _0ihLIuDoEeeVkMJxGTFkWg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0igkEODoEeeVkMJxGTFkWg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0igkEeDoEeeVkMJxGTFkWg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0ihLIuDoEeeVkMJxGTFkWg" name="fenetre" type="_Ytw9sODbEeeVkMJxGTFkWg" association="_0if9AODoEeeVkMJxGTFkWg"/>
   </packagedElement>
 </uml:Model>
